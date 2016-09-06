@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev-build": "jspm bundle test.js -wid",
-    "build": "jspm bundle test.js build.js --minify"
+    "dev-build": "jspm bundle main.js -wid",
+    "build": "jspm bundle main.js build.js --minify"
   },
   "keywords": [],
   "author": "",
