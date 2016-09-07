@@ -1,15 +1,15 @@
 {
   "name": "jspm-boilerplate",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A starter project for jspm beta and react",
+  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev-build": "jspm bundle main.js -wid",
-    "build": "jspm bundle main.js build.js --minify"
+    "build": "jspm bundle main.js build.js --minify",
+    "lint": "eslint src/* || exit 0"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["jspm", "jspm-beta", "boilerplate", "v0.17"],
+  "author": "sahiljain112@gmail.com",
   "license": "ISC",
   "devDependencies": {
     "jspm": "^0.17.0-beta.28"
