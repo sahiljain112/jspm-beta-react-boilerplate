@@ -48,7 +48,7 @@ SystemJS.config({
   transpiler: "plugin-babel",
   packages: {
     "jspm-boilerplate": {
-      "main": "main.js",
+      "main": "sample.js",
       "format": "esm",
       "meta": {
         "*.js": {
