@@ -1,11 +1,10 @@
 SystemJS.config({
-  paths: {
-    "npm:": "jspm_packages/npm/",
-    "github:": "jspm_packages/github/",
-    "jspm-boilerplate/": "src/"
-  },
-  browserConfig: {
-    "baseURL": "/"
+  nodeConfig: {
+    "paths": {
+      "npm:": "jspm_packages/npm/",
+      "github:": "jspm_packages/github/",
+      "jspm-boilerplate/": "src/"
+    }
   },
   devConfig: {
     "map": {
@@ -54,7 +53,9 @@ SystemJS.config({
         "*.js": {
           "loader": "plugin-babel",
           "babelOptions": {
-            "plugins": ["babel-plugin-transform-react-jsx"]
+            "plugins": [
+              "babel-plugin-transform-react-jsx"
+            ]
           }
         }
       }
@@ -79,11 +80,14 @@ SystemJS.config({
     "fs": "github:jspm/nodelibs-fs@0.2.0-alpha",
     "http": "github:jspm/nodelibs-http@0.2.0-alpha",
     "https": "github:jspm/nodelibs-https@0.2.0-alpha",
+    "immutable": "npm:immutable@3.8.1",
     "os": "github:jspm/nodelibs-os@0.2.0-alpha",
     "path": "github:jspm/nodelibs-path@0.2.0-alpha",
     "process": "github:jspm/nodelibs-process@0.2.0-alpha",
     "react": "npm:react@15.3.1",
     "react-dom": "npm:react-dom@15.3.1",
+    "react-redux": "npm:react-redux@4.4.5",
+    "redux": "npm:redux@3.6.0",
     "stream": "github:jspm/nodelibs-stream@0.2.0-alpha",
     "string_decoder": "github:jspm/nodelibs-string_decoder@0.2.0-alpha",
     "url": "github:jspm/nodelibs-url@0.2.0-alpha",
@@ -144,13 +148,13 @@ SystemJS.config({
     },
     "npm:stream-browserify@2.0.1": {
       "map": {
-        "inherits": "npm:inherits@2.0.1",
+        "inherits": "npm:inherits@2.0.3",
         "readable-stream": "npm:readable-stream@2.1.5"
       }
     },
     "npm:readable-stream@2.1.5": {
       "map": {
-        "inherits": "npm:inherits@2.0.1",
+        "inherits": "npm:inherits@2.0.3",
         "core-util-is": "npm:core-util-is@1.0.2",
         "process-nextick-args": "npm:process-nextick-args@1.0.7",
         "buffer-shims": "npm:buffer-shims@1.0.0",
@@ -192,7 +196,7 @@ SystemJS.config({
     },
     "npm:stream-http@2.3.1": {
       "map": {
-        "inherits": "npm:inherits@2.0.1",
+        "inherits": "npm:inherits@2.0.3",
         "readable-stream": "npm:readable-stream@2.1.5",
         "builtin-status-codes": "npm:builtin-status-codes@2.0.0",
         "to-arraybuffer": "npm:to-arraybuffer@1.0.1",
@@ -229,7 +233,7 @@ SystemJS.config({
     },
     "npm:crypto-browserify@3.11.0": {
       "map": {
-        "inherits": "npm:inherits@2.0.1",
+        "inherits": "npm:inherits@2.0.3",
         "browserify-sign": "npm:browserify-sign@4.0.0",
         "randombytes": "npm:randombytes@2.0.3",
         "create-hash": "npm:create-hash@1.1.2",
@@ -243,7 +247,7 @@ SystemJS.config({
     },
     "npm:browserify-sign@4.0.0": {
       "map": {
-        "inherits": "npm:inherits@2.0.1",
+        "inherits": "npm:inherits@2.0.3",
         "create-hash": "npm:create-hash@1.1.2",
         "create-hmac": "npm:create-hmac@1.1.4",
         "bn.js": "npm:bn.js@4.11.6",
@@ -254,7 +258,7 @@ SystemJS.config({
     },
     "npm:create-hash@1.1.2": {
       "map": {
-        "inherits": "npm:inherits@2.0.1",
+        "inherits": "npm:inherits@2.0.3",
         "cipher-base": "npm:cipher-base@1.0.2",
         "ripemd160": "npm:ripemd160@1.0.1",
         "sha.js": "npm:sha.js@2.4.5"
@@ -263,7 +267,7 @@ SystemJS.config({
     "npm:create-hmac@1.1.4": {
       "map": {
         "create-hash": "npm:create-hash@1.1.2",
-        "inherits": "npm:inherits@2.0.1"
+        "inherits": "npm:inherits@2.0.3"
       }
     },
     "npm:diffie-hellman@5.0.2": {
@@ -296,7 +300,7 @@ SystemJS.config({
     "npm:elliptic@6.3.1": {
       "map": {
         "bn.js": "npm:bn.js@4.11.6",
-        "inherits": "npm:inherits@2.0.1",
+        "inherits": "npm:inherits@2.0.3",
         "hash.js": "npm:hash.js@1.0.3",
         "brorand": "npm:brorand@1.0.5"
       }
@@ -325,13 +329,13 @@ SystemJS.config({
     },
     "npm:cipher-base@1.0.2": {
       "map": {
-        "inherits": "npm:inherits@2.0.1"
+        "inherits": "npm:inherits@2.0.3"
       }
     },
     "npm:browserify-aes@1.0.6": {
       "map": {
         "create-hash": "npm:create-hash@1.1.2",
-        "inherits": "npm:inherits@2.0.1",
+        "inherits": "npm:inherits@2.0.3",
         "cipher-base": "npm:cipher-base@1.0.2",
         "evp_bytestokey": "npm:evp_bytestokey@1.0.0",
         "buffer-xor": "npm:buffer-xor@1.0.3"
@@ -345,13 +349,13 @@ SystemJS.config({
     },
     "npm:sha.js@2.4.5": {
       "map": {
-        "inherits": "npm:inherits@2.0.1"
+        "inherits": "npm:inherits@2.0.3"
       }
     },
     "npm:browserify-des@1.0.0": {
       "map": {
         "cipher-base": "npm:cipher-base@1.0.2",
-        "inherits": "npm:inherits@2.0.1",
+        "inherits": "npm:inherits@2.0.3",
         "des.js": "npm:des.js@1.0.0"
       }
     },
@@ -362,20 +366,41 @@ SystemJS.config({
     },
     "npm:hash.js@1.0.3": {
       "map": {
-        "inherits": "npm:inherits@2.0.1"
+        "inherits": "npm:inherits@2.0.3"
       }
     },
     "npm:asn1.js@4.8.0": {
       "map": {
         "bn.js": "npm:bn.js@4.11.6",
-        "inherits": "npm:inherits@2.0.1",
+        "inherits": "npm:inherits@2.0.3",
         "minimalistic-assert": "npm:minimalistic-assert@1.0.0"
       }
     },
     "npm:des.js@1.0.0": {
       "map": {
-        "inherits": "npm:inherits@2.0.1",
+        "inherits": "npm:inherits@2.0.3",
         "minimalistic-assert": "npm:minimalistic-assert@1.0.0"
+      }
+    },
+    "npm:react-redux@4.4.5": {
+      "map": {
+        "invariant": "npm:invariant@2.2.1",
+        "loose-envify": "npm:loose-envify@1.2.0",
+        "hoist-non-react-statics": "npm:hoist-non-react-statics@1.2.0",
+        "lodash": "npm:lodash@4.15.0"
+      }
+    },
+    "npm:redux@3.6.0": {
+      "map": {
+        "loose-envify": "npm:loose-envify@1.2.0",
+        "lodash-es": "npm:lodash-es@4.15.0",
+        "symbol-observable": "npm:symbol-observable@1.0.2",
+        "lodash": "npm:lodash@4.15.0"
+      }
+    },
+    "npm:invariant@2.2.1": {
+      "map": {
+        "loose-envify": "npm:loose-envify@1.2.0"
       }
     }
   }

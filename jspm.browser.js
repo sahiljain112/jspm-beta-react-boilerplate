@@ -2,8 +2,8 @@ SystemJS.config({
   baseURL: ".",
   production: true,
   paths: {
-    "github:*": "jspm_packages/github/*",
-    "npm:*": "jspm_packages/npm/*",
-    "jspm-react-component/": "src/"
+    "github:": "jspm_packages/github/",
+    "npm:": "jspm_packages/npm/",
+    "jspm-boilerplate/": "src/"
   }
 });

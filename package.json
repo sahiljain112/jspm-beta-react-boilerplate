@@ -8,7 +8,12 @@
     "build": "jspm bundle main.js build.js --minify",
     "lint": "eslint src/* || exit 0"
   },
-  "keywords": ["jspm", "jspm-beta", "boilerplate", "v0.17"],
+  "keywords": [
+    "jspm",
+    "jspm-beta",
+    "boilerplate",
+    "v0.17"
+  ],
   "author": "sahiljain112@gmail.com",
   "license": "ISC",
   "devDependencies": {
@@ -18,7 +23,9 @@
     "name": "jspm-boilerplate",
     "main": "main.js",
     "dependencies": {
-      "react-dom": "npm:react-dom@^15.3.1"
+      "immutable": "npm:immutable@^3.8.1",
+      "react-dom": "npm:react-dom@^15.3.1",
+      "react-redux": "npm:react-redux@^4.4.5"
     },
     "devDependencies": {
       "babel-plugin-transform-react-jsx": "npm:babel-plugin-transform-react-jsx@^6.8.0",
@@ -40,6 +47,7 @@
       "path": "github:jspm/nodelibs-path@^0.2.0-alpha",
       "process": "github:jspm/nodelibs-process@^0.2.0-alpha",
       "react": "npm:react@^15.3.1",
+      "redux": "npm:redux@^3.0.0",
       "stream": "github:jspm/nodelibs-stream@^0.2.0-alpha",
       "string_decoder": "github:jspm/nodelibs-string_decoder@^0.2.0-alpha",
       "url": "github:jspm/nodelibs-url@^0.2.0-alpha",
@@ -57,7 +65,7 @@
           "_stream_transform": "readable-stream/transform"
         }
       },
-      "npm:inherits@2.0.1": {
+      "npm:inherits@2.0.3": {
         "ignore": [
           "test.js"
         ]
